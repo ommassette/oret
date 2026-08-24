@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORET for Public Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #060B1E;
+            color: #FFFFFF;
+        }
+        .bg-navy {
+            background-color: #060B1E;
+        }
+        .accent-green-full {
+            color: #52E59A;
+        }
+        .bg-green-glow {
+            background: radial-gradient(circle, rgba(82, 229, 154, 0.12) 0%, rgba(6, 11, 30, 0) 70%);
+        }
+        .text-dark-navy {
+            color: #060B1E;
+        }
+        .text-dark-green {
+            color: #0A3A2A;
+        }
+        .border-green-accent {
+            border-color: #52E59A;
+        }
+        .bg-subtle-green {
+            background-color: rgba(82, 229, 154, 0.08);
+        }
+
+        /* STRICT MOBILE ONLY RESPONSIVENESS OVERRIDES */
+        @media (max-width: 767px) {
+            .mobile-stack-center {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+            }
+            .mobile-text-center {
+                text-align: center !important;
+            }
+            .mobile-center-content {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            .mobile-img-center {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            .mobile-full-btn {
+                width: 100% !important;
+                display: block !important;
+            }
+            .mobile-px-compact {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .mobile-py-compact {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-navy antialiased">
+
+    <!-- HERO SECTION -->
+    <section class="w-full min-h-screen flex items-center justify-center relative overflow-hidden z-10 mobile-py-compact">
+        <!-- Background Glow Effects -->
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-green-glow rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-green-glow rounded-full pointer-events-none"></div>
+
+        <div class="w-full max-w-7xl mx-auto px-6 py-16 lg:py-24 relative z-10 mobile-px-compact">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 flex flex-col justify-center mobile-text-center">
+                    <p class="text-xs uppercase tracking-widest font-semibold text-[rgba(82,229,154,0.8)] mb-6">
+                        Sharp Perceptions <span class="mx-1.5 accent-green-full">·</span> Oret
+                    </p>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+                        <span class="accent-green-full">ORET</span> for <br class="hidden sm:inline" />
+                        <span class="text-white">Public Service</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-[rgba(255,255,255,0.75)] font-light leading-relaxed mb-10 max-w-2xl mobile-img-center">
+                        Building institutional resilience through trauma-informed, culturally grounded mental health care
+                    </p>
+
+                    <div class="pt-6 border-t border-[rgba(82,229,154,0.15)] max-w-xl mobile-img-center">
+                        <p class="text-xs uppercase tracking-wider text-[rgba(82,229,154,0.6)] font-semibold mb-1">Presented by</p>
+                        <p class="text-base font-medium text-white">
+                            Brenda Jepkorir, <span class="text-[rgba(255,255,255,0.7)]">Psychologist</span>
+                            <span class="mx-2 accent-green-full">·</span>
+                            <span class="text-[rgba(255,255,255,0.7)]">Founder, Sharp Perceptions</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative w-full aspect-[4/5] max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden border border-[rgba(82,229,154,0.25)] shadow-2xl">
+                        <img 
+                            src="images/hero.jpg" 
+                            alt="Brenda Jepkorir - Psychologist" 
+                            class="w-full h-full object-cover object-center"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#060B1E] via-transparent to-transparent opacity-80"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: WHITE BACKGROUND -->
+    <section class="w-full bg-white text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 flex flex-col justify-center mobile-text-center">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-dark-green mb-6 leading-tight">
+                        Every day, your people carry what the job doesn't let them put down.
+                    </h2>
+
+                    <p class="text-lg sm:text-xl text-gray-700 font-normal leading-relaxed mb-8">
+                        Exposure to trauma. Long hours under pressure. Grief, threat and loss that do not end at the gate. Across ministries, counties and uniformed services, officers and staff are absorbing more than any job description accounts for.
+                    </p>
+
+                    <div class="p-6 rounded-xl bg-subtle-green border-l-4 border-green-accent">
+                        <blockquote class="text-base sm:text-lg italic font-medium text-dark-navy leading-relaxed">
+                            "Many suffer in silence not because help doesn't exist, but because the system was not built to catch them early."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="lg:col-span-5">
+                    <div class="relative w-full aspect-[4/5] max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                        <img 
+                            src="https://dims.apnews.com/dims4/default/0679f75/2147483647/strip/true/crop/4261x2841+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fca%2Fbf%2F2b973ebd487e0deb457a91ade11e%2Fb7a6faa9e4dc4d6d81fe4bf0fb718ed5" 
+                            alt="Public service staff" 
+                            class="w-full h-full object-cover object-center"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: DARK BLUE BACKGROUND WITH STAT CARDS -->
+    <section class="w-full bg-navy py-16 lg:py-24 relative overflow-hidden mobile-py-compact">
+        <!-- Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-glow rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 mobile-px-compact">
+            <!-- Section Header -->
+            <div class="mb-14 text-center lg:text-left">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+                    The data confirms what <span class="accent-green-full">you're living</span>
+                </h2>
+            </div>
+
+            <!-- 3 Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-[rgba(82,229,154,0.06)] border border-[rgba(82,229,154,0.2)] flex flex-col justify-between mobile-text-center">
+                    <div>
+                        <span class="text-4xl sm:text-5xl font-extrabold accent-green-full block mb-4">
+                            59%
+                        </span>
+                        <p class="text-base sm:text-lg text-[rgba(255,255,255,0.85)] font-normal leading-relaxed mb-6">
+                            of public servants report struggling with their mental health
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[rgba(82,229,154,0.15)]">
+                        <p class="text-xs text-[rgba(82,229,154,0.7)] uppercase tracking-wider font-semibold">
+                            Ministry of Public Service, Directorate of Counselling & Wellness Services
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-[rgba(82,229,154,0.06)] border border-[rgba(82,229,154,0.2)] flex flex-col justify-between mobile-text-center">
+                    <div>
+                        <span class="text-4xl sm:text-5xl font-extrabold accent-green-full block mb-4">
+                            KES 62.2 B
+                        </span>
+                        <p class="text-base sm:text-lg text-[rgba(255,255,255,0.85)] font-normal leading-relaxed mb-6">
+                            lost annually to mental-health-related absenteeism and reduced productivity
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[rgba(82,229,154,0.15)]">
+                        <p class="text-xs text-[rgba(82,229,154,0.7)] uppercase tracking-wider font-semibold">
+                            Kenya Mental Health Investment Case
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-[rgba(82,229,154,0.06)] border border-[rgba(82,229,154,0.2)] flex flex-col justify-between mobile-text-center">
+                    <div>
+                        <span class="text-3xl sm:text-4xl font-extrabold text-white block mb-4 tracking-tight">
+                            Uniformed Officers
+                        </span>
+                        <p class="text-base sm:text-lg text-[rgba(255,255,255,0.85)] font-normal leading-relaxed mb-6">
+                            remain the most affected, with a rising pattern of suicide-related cases
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[rgba(82,229,154,0.15)]">
+                        <p class="text-xs text-[rgba(82,229,154,0.7)] uppercase tracking-wider font-semibold">
+                            Public Service Commission, Aug 2026
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WHO I AM (WHITE BACKGROUND) -->
+    <section class="w-full bg-white text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Image Column -->
+                <div class="lg:col-span-5">
+                    <div class="relative w-full aspect-[4/5] max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                        <img 
+                            src="images/2.jpg" 
+                            alt="Brenda J Sharp speaking at event" 
+                            class="w-full h-full object-cover object-center"
+                        />
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="lg:col-span-7 flex flex-col justify-center mobile-text-center">
+                    <p class="text-xs uppercase tracking-widest font-bold text-emerald-700 mb-3">
+                        WHO I AM
+                    </p>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-dark-navy mb-3 leading-tight">
+                        Brenda J Sharp
+                    </h2>
+
+                    <p class="text-base sm:text-lg font-semibold text-emerald-600 mb-6">
+                        Psychologist <span class="mx-1 text-emerald-600 font-normal">·</span> Founder, Sharp Perceptions
+                    </p>
+
+                    <p class="text-base sm:text-lg text-gray-700 font-normal leading-relaxed mb-8">
+                        Over a decade of trauma-informed mental health practice across Kenya and the region. Creator of ORET — the Tree of Life model — integrating narrative exposure therapy, somatic awareness, attachment theory and Nandi cultural psychology into one framework for healing.
+                    </p>
+
+                    <!-- Tags / Pills -->
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <span class="px-4 py-2 rounded-full border border-emerald-400 bg-emerald-50 text-dark-navy font-semibold text-sm">
+                            Trauma-informed care
+                        </span>
+                        <span class="px-4 py-2 rounded-full border border-emerald-400 bg-emerald-50 text-dark-navy font-semibold text-sm">
+                            Somatic awareness
+                        </span>
+                        <span class="px-4 py-2 rounded-full border border-emerald-400 bg-emerald-50 text-dark-navy font-semibold text-sm">
+                            Attachment theory
+                        </span>
+                        <span class="px-4 py-2 rounded-full border border-emerald-400 bg-emerald-50 text-dark-navy font-semibold text-sm">
+                            Nandi cultural psychology
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: TRACK RECORD (LIGHT BACKGROUND WITH 3 CARDS) -->
+    <section class="w-full bg-slate-50 text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-dark-navy mb-12 mobile-text-center">
+                A track record built where it's hardest
+            </h2>
+
+            <!-- 3 Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-emerald-600 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V7.865M12 21a9 9 0 100-18 9 9 0 000 18z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Kakuma Refugee Camp
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Led an MHPSS programme designed and tailored to the realities of a displacement setting.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-emerald-600 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Trauma Survivor Toolkit
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Designed and deployed across Kenya, South Africa and Nigeria.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-emerald-600 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Global Partnerships
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Delivered work in partnership with UN agencies, international organisations and government.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Subtext Callout -->
+            <p class="text-sm font-medium italic text-emerald-600 mobile-text-center">
+                Plus a proof point built in one of the hardest spaces of all — next.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: TRACK RECORD · SPOTLIGHT (WHITE BACKGROUND) -->
+    <section class="w-full bg-white text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Image Column -->
+                <div class="lg:col-span-6">
+                    <div class="relative w-full aspect-[4/3] max-w-lg mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                        <img 
+                            src="images/3.jpeg" 
+                            alt="Trauma-Informed Policing group photo with officers and trainers" 
+                            class="w-full h-full object-cover object-center"
+                        />
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="lg:col-span-6 flex flex-col justify-center mobile-text-center">
+                    <p class="text-xs uppercase tracking-widest font-bold text-emerald-600 mb-3">
+                        TRACK RECORD <span class="mx-1 text-emerald-600">·</span> SPOTLIGHT
+                    </p>
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-dark-navy mb-6 leading-tight">
+                        Trauma-Informed Policing
+                    </h2>
+
+                    <p class="text-base sm:text-lg text-gray-700 font-normal leading-relaxed mb-8">
+                        I co-created the community engagement component of Kenya's trauma-informed policing curriculum, developed in partnership with the United States Institute of Peace (USIP) — equipping officers to recognise trauma responses, de-escalate with empathy, and rebuild trust with the communities they serve.
+                    </p>
+
+                    <!-- Checkpoint List -->
+                    <div class="space-y-4 text-left">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="text-base font-bold text-dark-navy leading-snug">
+                                A national curriculum component, co-designed and delivered with government partners
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="text-base font-bold text-dark-navy leading-snug">
+                                Direct evidence that officer wellbeing and safer community policing go hand in hand
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-600 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="text-base font-bold text-dark-navy leading-snug">
+                                A working model for exactly the uniformed-officer crisis this room already knows
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: INTRODUCING ORET FOR PUBLIC SERVICE (DARK NAVY BACKGROUND) -->
+    <section class="w-full bg-navy py-20 lg:py-28 relative overflow-hidden mobile-py-compact">
+        <!-- Background Dark Overlay/Shape -->
+        <div class="absolute top-0 right-1/4 w-[700px] h-[700px] bg-emerald-900/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10 mobile-px-compact">
+            
+            <p class="text-xs uppercase tracking-widest font-bold accent-green-full mb-6">
+                INTRODUCING
+            </p>
+
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                ORET for Public Service
+            </h2>
+
+            <p class="text-lg sm:text-xl text-[rgba(255,255,255,0.8)] font-light leading-relaxed mb-16 max-w-3xl mx-auto">
+                The same proven model — reimagined to serve the men and women who serve Kenya.
+            </p>
+
+            <!-- 3 Process Steps Flow -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 max-w-5xl mx-auto">
+                
+                <!-- Box 1 -->
+                <div class="w-full md:w-1/3 py-8 px-6 rounded-2xl bg-[rgba(82,229,154,0.03)] border border-[rgba(82,229,154,0.3)] text-center transition-all duration-300 hover:border-[rgba(82,229,154,0.6)]">
+                    <p class="text-base font-bold text-white leading-snug">
+                        ORET<br>
+                        <span class="font-normal text-gray-300 text-sm">(the core model)</span>
+                    </p>
+                </div>
+
+                <!-- Arrow 1 -->
+                <div class="text-[rgba(82,229,154,0.6)] text-xl font-bold py-1 md:py-0">
+                    <svg class="w-6 h-6 transform rotate-90 md:rotate-0 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="w-full md:w-1/3 py-8 px-6 rounded-2xl bg-[rgba(82,229,154,0.03)] border border-[rgba(82,229,154,0.3)] text-center transition-all duration-300 hover:border-[rgba(82,229,154,0.6)]">
+                    <p class="text-base font-bold text-white leading-snug">
+                        Tailored<br>
+                        <span class="font-normal text-gray-300 text-sm">to public service</span>
+                    </p>
+                </div>
+
+                <!-- Arrow 2 -->
+                <div class="text-[rgba(82,229,154,0.6)] text-xl font-bold py-1 md:py-0">
+                    <svg class="w-6 h-6 transform rotate-90 md:rotate-0 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="w-full md:w-1/3 py-8 px-6 rounded-2xl bg-[rgba(82,229,154,0.03)] border border-[rgba(82,229,154,0.3)] text-center transition-all duration-300 hover:border-[rgba(82,229,154,0.6)]">
+                    <p class="text-base font-bold text-white leading-snug">
+                        Embedded<br>
+                        <span class="font-normal text-gray-300 text-sm">in your systems</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: WHAT ORET FOR PUBLIC SERVICE DELIVERS (LIGHT BACKGROUND WITH 6 CARDS) -->
+    <section class="w-full bg-slate-50 text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            
+            <!-- Section Title & Subtitle -->
+            <div class="mb-12 mobile-text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-dark-navy mb-3">
+                    What ORET for Public Service delivers
+                </h2>
+                <p class="text-base sm:text-lg italic font-medium text-emerald-600">
+                    Every layer is built around one goal: keeping the people who serve Kenya well enough to keep serving.
+                </p>
+            </div>
+
+            <!-- 6 Card Grid (3x2) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Embedded, not external
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Built into existing systems and structures — not bolted on as an event.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Leadership & mentorship
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Equips leaders as visible champions of wellbeing, not bystanders.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Co-created
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Designed with, and continuously informed by, public servants themselves.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Early assessment
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Creates space to identify distress before it becomes a crisis.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Layered by level
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Tailored across entry, mid, senior and uniformed cadres.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-start mobile-center-content mobile-text-center">
+                    <div class="w-14 h-14 rounded-full bg-slate-900 flex items-center justify-center text-white mb-6 shrink-0">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-navy mb-3">
+                        Linked to SHA
+                    </h3>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Connects to Kenya's national mental health cover under the Social Health Authority.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 9: SEE IT IN ACTION - ACCESSING ORET DIGITALLY (LIGHT GREEN BACKGROUND) -->
+    <section class="w-full bg-[#f2f9f5] text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            
+            <!-- Category & Heading -->
+            <p class="text-xs uppercase tracking-widest font-bold text-emerald-600 mb-3 mobile-text-center">
+                THE OFFERING <span class="mx-1 text-emerald-600">·</span> DIGITAL ACCESS
+            </p>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-dark-navy mb-12 lg:mb-16 mobile-text-center">
+                See it in action — accessing ORET digitally
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Phone Mockup Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <!-- Phone Frame -->
+                    <div class="relative w-full max-w-[320px] bg-slate-900 rounded-[44px] p-4 shadow-2xl border-4 border-slate-800">
+                        <!-- Screen Container -->
+                        <div class="w-full bg-white rounded-[32px] overflow-hidden pt-6 pb-8 px-5 flex flex-col items-center min-h-[540px] justify-between relative">
+                            
+                            <!-- Dynamic Island / Notch -->
+                            <div class="w-24 h-4 bg-slate-900 rounded-full mx-auto mb-6"></div>
+
+                            <!-- Screen Header -->
+                            <div class="text-center mb-6">
+                                <p class="text-xs uppercase tracking-widest font-bold text-emerald-600">
+                                    ORET THE WAY
+                                </p>
+                            </div>
+
+                            <!-- Sprout Graphic Circle -->
+                            <div class="w-24 h-24 rounded-full border border-emerald-400 bg-emerald-50/50 flex items-center justify-center mb-6">
+                                <svg class="w-12 h-12 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 22C12 22 11.5 16 7 13C4 11 2 11 2 11C2 11 5 8 10 8C14.5 8 17.5 10.5 19 13.5C20 15.5 20.5 18 20.5 18C20.5 18 18 17.5 15.5 16.5C13 15.5 12 22 12 22Z" />
+                                </svg>
+                            </div>
+
+                            <!-- Step Title -->
+                            <p class="text-xs font-bold text-slate-800 mb-3">
+                                Step 2 of 5 — Roots
+                            </p>
+
+                            <!-- Progress Dots -->
+                            <div class="flex items-center justify-center gap-2 mb-8">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-slate-200"></span>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="w-full space-y-3 mb-6">
+                                <button class="w-full py-3 bg-emerald-600 text-white rounded-full text-xs font-semibold shadow-sm hover:bg-emerald-700 transition">
+                                    Continue journey
+                                </button>
+                                <button class="w-full py-3 bg-white text-slate-800 border border-slate-900 rounded-full text-xs font-semibold hover:bg-slate-50 transition">
+                                    Talk to someone now
+                                </button>
+                            </div>
+
+                            <!-- Screen Footer -->
+                            <p class="text-[10px] text-slate-400 font-medium">
+                                Confidential · Available anytime
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature List Column -->
+                <div class="lg:col-span-7 flex flex-col justify-center space-y-8">
+                    
+                    <!-- Item 1 -->
+                    <div class="flex items-start gap-5 mobile-stack-center">
+                        <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-white shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark-navy mb-1">
+                                Confidential self-assessment
+                            </h3>
+                            <p class="text-base text-gray-600 leading-relaxed">
+                                A private first step to understand where someone stands, before things escalate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-start gap-5 mobile-stack-center">
+                        <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-white shrink-0">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 22C12 22 11.5 16 7 13C4 11 2 11 2 11C2 11 5 8 10 8C14.5 8 17.5 10.5 19 13.5C20 15.5 20.5 18 20.5 18C20.5 18 18 17.5 15.5 16.5C13 15.5 12 22 12 22Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark-navy mb-1">
+                                A guided ORET journey
+                            </h3>
+                            <p class="text-base text-gray-600 leading-relaxed">
+                                Step-by-step, narrated exercises that walk each person through the Tree of Life model at their own pace.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-start gap-5 mobile-stack-center">
+                        <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-white shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark-navy mb-1">
+                                Support, one tap away
+                            </h3>
+                            <p class="text-base text-gray-600 leading-relaxed">
+                                A persistent button connects users to grounding practices, a therapist, or crisis support — instantly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex items-start gap-5 mobile-stack-center">
+                        <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center text-white shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark-navy mb-1">
+                                Linked to SHA & M-Pesa
+                            </h3>
+                            <p class="text-base text-gray-600 leading-relaxed">
+                                Built to work with how public servants already pay for and access care.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Banner / Pill -->
+                    <div class="pt-4">
+                        <div class="w-full p-4 rounded-xl border border-emerald-300 bg-emerald-50/60 text-emerald-950 font-medium text-sm sm:text-base flex flex-wrap items-center gap-2 justify-center lg:justify-start mobile-text-center">
+                            <span class="font-bold">Piloting now</span>
+                            <span>·</span>
+                            <span class="font-bold">ORET The Way</span>
+                            <span>·</span>
+                            <a href="https://oret-the-way-pilot.netlify.app" target="_blank" class="underline font-semibold hover:text-emerald-700 transition">
+                                oret-the-way-pilot.netlify.app
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: WHY ORET — AND NOT ANOTHER WELLNESS TALK (LIGHT GREEN BACKGROUND) -->
+    <section class="w-full bg-[#f2f9f5] text-dark-navy py-16 lg:py-24 mobile-py-compact">
+        <div class="max-w-7xl mx-auto px-6 mobile-px-compact">
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-dark-navy mb-12 lg:mb-16 mobile-text-center">
+                Why ORET — and not another wellness talk
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Card 1: What's been tried (White Card) -->
+                <div class="p-8 lg:p-12 rounded-2xl bg-white border border-gray-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-700 mb-8 mobile-text-center">
+                            What's been tried
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <span class="text-gray-400 font-light text-base select-none mt-0.5">✗</span>
+                                <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
+                                    Counselling units often understaffed and under-resourced
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-gray-400 font-light text-base select-none mt-0.5">✗</span>
+                                <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
+                                    Generic wellness talks with little follow-through
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-gray-400 font-light text-base select-none mt-0.5">✗</span>
+                                <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
+                                    Support that arrives after a crisis, not before
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="text-gray-400 font-light text-base select-none mt-0.5">✗</span>
+                                <p class="text-base sm:text-lg text-gray-400 font-normal leading-relaxed">
+                                    Stigma that keeps people from walking in the door
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: What ORET brings (Dark Navy Card) -->
+                <div class="p-8 lg:p-12 rounded-2xl bg-[#060B1E] text-white shadow-xl flex flex-col justify-between border border-[rgba(82,229,154,0.15)]">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-bold accent-green-full mb-8 mobile-text-center">
+                            What ORET brings
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <span class="accent-green-full font-bold text-base select-none mt-0.5">✓</span>
+                                <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                                    A model proven in the hardest settings policing, refugee camps, cross-border toolkits
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="accent-green-full font-bold text-base select-none mt-0.5">✓</span>
+                                <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                                    Trauma-informed and culturally grounded, not generic
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="accent-green-full font-bold text-base select-none mt-0.5">✓</span>
+                                <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                                    Built into daily systems, not a one-off event
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <span class="accent-green-full font-bold text-base select-none mt-0.5">✓</span>
+                                <p class="text-base sm:text-lg text-white font-normal leading-relaxed">
+                                    Early identification, before cases escalate
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 11: THE TIMING HAS NEVER BEEN BETTER (DARK NAVY BACKGROUND) -->
+    <section class="w-full bg-[#060B1E] text-white py-16 lg:py-24 relative overflow-hidden mobile-py-compact">
+        <!-- Background Glow -->
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-green-glow rounded-full pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 mobile-px-compact">
+            
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-12 lg:mb-16 mobile-text-center">
+                The timing has never been better
+            </h2>
+
+            <!-- Numbered Points List -->
+            <div class="space-y-8 mb-16">
+                
+                <!-- Point 1 -->
+                <div class="flex items-start gap-6 mobile-stack-center">
+                    <div class="w-10 h-10 rounded-full bg-[#52E59A] text-[#060B1E] font-bold text-lg flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                        1
+                    </div>
+                    <p class="text-lg sm:text-xl text-[rgba(255,255,255,0.9)] font-normal leading-relaxed">
+                        Mental health is now part of Kenya's national insurance cover, under SHA and the Taifa Care Model.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="flex items-start gap-6 mobile-stack-center">
+                    <div class="w-10 h-10 rounded-full bg-[#52E59A] text-[#060B1E] font-bold text-lg flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                        2
+                    </div>
+                    <p class="text-lg sm:text-xl text-[rgba(255,255,255,0.9)] font-normal leading-relaxed">
+                        The Public Service Commission has already named this a top workforce priority.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="flex items-start gap-6 mobile-stack-center">
+                    <div class="w-10 h-10 rounded-full bg-[#52E59A] text-[#060B1E] font-bold text-lg flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                        3
+                    </div>
+                    <p class="text-lg sm:text-xl text-[rgba(255,255,255,0.9)] font-normal leading-relaxed">
+                        What's missing is not commitment it's a tested, embeddable model to carry it through.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CTA Button linking to Netlify Pilot App -->
+            <div class="mobile-text-center">
+                <a 
+                    href="https://oret-the-way-pilot.netlify.app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-5 rounded-2xl bg-[#52E59A] text-[#060B1E] font-bold text-xl sm:text-2xl tracking-tight hover:bg-[#43d489] transition-all duration-200 shadow-lg text-center cursor-pointer mobile-full-btn"
+                >
+                    Let's pilot ORET for Public Service.
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 12: THANK YOU (DARK NAVY FOOTER / CLOSING SECTION) -->
+    <section class="w-full bg-[#060B1E] text-white py-24 lg:py-32 relative overflow-hidden mobile-py-compact">
+        <!-- Top-Left Corner Circle Accent -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#0d1e28] opacity-60 pointer-events-none"></div>
+
+        <!-- Bottom-Right Corner Circle Accent -->
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#0d1e28] opacity-60 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col items-center justify-center mobile-px-compact">
+            
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4">
+                Thank you
+            </h2>
+
+            <p class="text-base sm:text-lg font-medium accent-green-full mb-16">
+                ORET for Public Service <span class="mx-1 text-white">·</span> Sharp Perceptions
+            </p>
+
+            <div class="space-y-2">
+                <p class="text-base sm:text-lg text-white font-medium">
+                    Brenda J Sharp <span class="mx-1 text-gray-400">·</span> Psychologist & Founder
+                </p>
+
+                <p class="text-sm sm:text-base text-gray-400 font-light">
+                    [ <a href="mailto:sharpperceptions@gmail.com" class="hover:text-emerald-400 transition underline">sharpperceptions@gmail.com</a> / <a href="tel:+254739425425" class="hover:text-emerald-400 transition">+254739425425</a> ]
+                </p>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
